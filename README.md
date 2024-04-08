@@ -1,0 +1,1 @@
+#Projeto Interdisciplinar, apresentar estrutura com menu é possibilidade de escolha da função desejada, utilizar conceitos de sistemas de numeração, conversão entre base aritmética binária com inteiros.
