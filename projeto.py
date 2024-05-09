@@ -26,3 +26,19 @@ if n == 1:
     numero_decimal = int(input("Digite o número decimal a ser convertido: "))
     resultado_binario = decimal_para_binario (numero_decimal)
     print( "O número decimal", "em binário é:",resultado_binario)
+elif n == 2:
+    def decimal_para_octal(decimal):
+        if decimal == 0:
+            return "0"
+
+        octal = ""
+        while decimal > 0:
+            resto = decimal % 8
+            octal = str(resto) + octal
+            decimal //= 8
+
+        return octal
+
+    numero_decimal = int(input("Digite o número decimal a ser convertido: "))
+    resultado_octal = decimal_para_octal (numero_decimal)
+    print( "O número decimal", "em octal é:",resultado_octal)
