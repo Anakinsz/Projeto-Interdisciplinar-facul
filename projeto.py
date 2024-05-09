@@ -42,3 +42,19 @@ elif n == 2:
     numero_decimal = int(input("Digite o número decimal a ser convertido: "))
     resultado_octal = decimal_para_octal (numero_decimal)
     print( "O número decimal", "em octal é:",resultado_octal)
+elif n == 3:
+    def decimal_para_hexadecimal(decimal):
+        if decimal == 0:
+            return "0"
+
+        hexadecimal = ""
+        while decimal > 0:
+            resto = decimal % 16
+            hexadecimal = str(resto) + hexadecimal
+            decimal //= 16
+
+        return hexadecimal
+
+    numero_decimal = int(input("Digite o número decimal a ser convertido: "))
+    resultado_hexadecimal = decimal_para_hexadecimal (numero_decimal)
+    print( "O número decimal", "em hexadecimal é:",resultado_hexadecimal)
